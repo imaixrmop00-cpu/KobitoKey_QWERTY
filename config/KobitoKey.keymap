@@ -38,10 +38,10 @@
 
         default_layer {
             bindings = <
-&kp F   &kp Y   &kp R   &kp W   &kp J        &kp X            &kp U      &kp C   &kp L              &kp P
-&kp H   &kp S   &kp N   &kp T   &kp K        &kp O            &kp A      &kp I   &kp E              &kp TAB
-&kp B   &kp Z   &kp M   &kp D   &kp G        &kp V            &trans     &trans  &mt RIGHT_SHIFT Q  &kp LEFT_WIN
-&trans  &trans  &trans  &trans  &lt 2 ENTER  &lt 1 BACKSPACE  &kp RCTRL  &trans  &trans             &kp ENTER
+&kp F           &kp Y       &kp R      &kp W    &kp J        &kp X        &kp U                    &kp C      &mt RIGHT_SHIFT L  &kp P
+&kp H           &kp S       &kp N      &kp T    &kp K        &kp O        &kp A                    &kp I      &kp E              &kp TAB
+&kp B           &kp Z       &kp M      &kp D    &kp G        &kp V        &trans                   &trans     &mt RIGHT_SHIFT Q  &kp LEFT_WIN
+&kp LEFT_SHIFT  &kp DELETE  &kp SPACE  &kp TAB  &lt 2 ENTER  &lt 1 ENTER  &mt RIGHT_ALT BACKSPACE  &kp RCTRL  &trans             &trans
             >;
         };
 
@@ -68,10 +68,10 @@
         layer3 {
             label = "MOUSE";
             bindings = <
-&trans     &trans  &trans    &trans    &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans     &trans  &trans    &trans    &trans  &trans  &trans    &trans    &trans    &trans
-&trans     &trans  &trans    &trans    &trans  &trans  &trans    &trans    &trans    &trans
-&kp LSHFT  &trans  &kp LCMD  &kp LALT  &to 0   &trans  &trans    &trans    &to 0     &kp RALT
+&trans     &trans  &trans    &trans    &trans  &mkp MB1   &trans  &mkp MB2  &kp RIGHT_SHIFT  &trans
+&trans     &trans  &trans    &trans    &trans  &trans     &trans  &trans    &trans           &kp TAB
+&trans     &trans  &trans    &trans    &trans  &trans     &trans  &trans    &trans           &trans
+&kp LSHFT  &trans  &kp LCMD  &kp LALT  &to 0   &kp ENTER  &trans  &trans    &to 0            &kp RALT
             >;
         };
     };
