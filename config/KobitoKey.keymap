@@ -48,10 +48,10 @@
         layer1 {
             label = "NUMBER";
             bindings = <
-&kp COMMA  &kp PERIOD  &kp PAGE_UP  &kp UP_ARROW    &kp END          &kp N0     &kp N7         &kp N8     &kp NUMBER_9     &kp RIGHT_SHIFT
-&kp MINUS  &kp PLUS    &kp HOME     &kp PAGE_DOWN   &kp DOWN_ARROW   &kp N0     &kp N4         &kp N5     &kp N6           &kp RIGHT_SHIFT
-&trans     &trans      &kp EQUAL    &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp N0     &kp N1         &kp N2     &kp N3           &kp RIGHT_SHIFT
-&trans     &trans      &trans       &kp LSHFT       &trans           &kp ENTER  &kp BACKSPACE  &kp RCTRL  &kp RIGHT_SHIFT  &kp RIGHT_SHIFT
+&kp COMMA  &kp PERIOD       &kp PAGE_UP  &kp UP_ARROW    &kp END          &kp N0     &kp N7         &kp N8     &kp NUMBER_9     &kp RIGHT_SHIFT
+&kp MINUS  &kp KP_PLUS      &kp HOME     &kp PAGE_DOWN   &kp DOWN_ARROW   &kp N0     &kp N4         &kp N5     &kp N6           &kp RIGHT_SHIFT
+&kp SLASH  &kp KP_MULTIPLY  &kp EQUAL    &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp N0     &kp N1         &kp N2     &kp N3           &kp RIGHT_SHIFT
+&trans     &trans           &trans       &kp LSHFT       &trans           &kp ENTER  &kp BACKSPACE  &kp RCTRL  &kp RIGHT_SHIFT  &kp RIGHT_SHIFT
             >;
         };
 
