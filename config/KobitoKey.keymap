@@ -20,16 +20,18 @@
             bindings = <&kp LANG1>;
         };
 
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp ESC>;
+        ctrl_alt_del {
+            bindings = <&ctrl_alt_del>;
+            key-positions = <5 8>;
         };
+    };
 
-        combo_tab {
-            timeout-ms = <50>;
-            key-positions = <10 11>;
-            bindings = <&kp TAB>;
+    macros {
+        ctrl_alt_del: ctrl_alt_del {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RCTRL &kp RIGHT_ALT &kp DELETE>;
+            label = "CTRL_ALT_DEL";
         };
     };
 
@@ -40,8 +42,8 @@
             bindings = <
 &kp F           &kp Y       &kp R        &kp W      &kp J        &mt RIGHT_ALT X  &kp U            &kp C      &mt RIGHT_SHIFT L  &kp P
 &kp H           &kp S       &kp N        &kp T      &kp K        &kp O            &kp A            &kp I      &kp E              &kp TAB
-&kp B           &kp Z       &kp M        &kp D      &kp G        &kp V            &kp MINUS        &trans     &mt RIGHT_SHIFT Q  &kp LEFT_WIN
-&kp LEFT_SHIFT  &kp DELETE  &lt 4 SPACE  &lt 1 TAB  &lt 2 ENTER  &lt 2 ENTER      &lt 1 BACKSPACE  &kp RCTRL  &trans             &trans
+&kp B           &kp Z       &kp M        &kp D      &kp G        &kp V            &kp MINUS        &kp SLASH  &mt RIGHT_SHIFT Q  &kp LEFT_WIN
+&kp LEFT_SHIFT  &kp DELETE  &lt 4 SPACE  &lt 1 TAB  &lt 2 ENTER  &lt 2 ENTER      &lt 1 BACKSPACE  &kp RCTRL  &trans             &ctrl_alt_del
             >;
         };
 
@@ -51,14 +53,14 @@
 &kp COMMA  &kp PERIOD       &kp PAGE_UP     &kp UP_ARROW     &kp PAGE_DOWN   &kp N0     &kp N7         &kp N8     &kp NUMBER_9     &kp RIGHT_SHIFT
 &kp MINUS  &kp KP_PLUS      &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp DOWN_ARROW  &kp N0     &kp N4         &kp N5     &kp N6           &kp RIGHT_SHIFT
 &kp SLASH  &kp KP_MULTIPLY  &kp HOME        &kp END          &kp SEMICOLON   &kp N0     &kp N1         &kp N2     &kp N3           &kp RIGHT_SHIFT
-&trans     &trans           &trans          &kp LSHFT        &trans          &kp ENTER  &kp BACKSPACE  &kp RCTRL  &kp RIGHT_SHIFT  &kp RIGHT_SHIFT
+&trans     &trans           &trans          &kp EQUAL        &kp ENTER       &kp ENTER  &kp BACKSPACE  &kp RCTRL  &kp RIGHT_SHIFT  &kp RIGHT_SHIFT
             >;
         };
 
         layer2 {
             label = "FUNCTION";
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4    &kp RIGHT_SHIFT  &kp F1   &kp F2           &kp F3           &kp RIGHT_SHIFT
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4    &kp PRINTSCREEN  &kp F1   &kp F2           &kp F3           &kp RIGHT_SHIFT
 &trans        &trans        &trans        &trans          &bt BT_CLR      &kp F4           &kp F5   &kp F6           &kp F7           &kp RIGHT_SHIFT
 &trans        &trans        &trans        &trans          &bt BT_CLR_ALL  &kp F8           &kp F9   &kp F10          &kp F11          &kp RIGHT_SHIFT
 &trans        &trans        &kp INSERT    &kp SCROLLLOCK  &kp ESCAPE      &kp RIGHT_SHIFT  &kp F12  &kp RIGHT_SHIFT  &kp RIGHT_SHIFT  &kp RIGHT_SHIFT
