@@ -48,20 +48,20 @@
         layer1 {
             label = "NUMBER";
             bindings = <
-&kp COMMA  &kp PERIOD       &kp PAGE_UP  &kp UP_ARROW    &kp END          &kp N0     &kp N7         &kp N8     &kp NUMBER_9     &kp RIGHT_SHIFT
-&kp MINUS  &kp KP_PLUS      &kp HOME     &kp PAGE_DOWN   &kp DOWN_ARROW   &kp N0     &kp N4         &kp N5     &kp N6           &kp RIGHT_SHIFT
-&kp SLASH  &kp KP_MULTIPLY  &kp EQUAL    &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp N0     &kp N1         &kp N2     &kp N3           &kp RIGHT_SHIFT
-&trans     &trans           &trans       &kp LSHFT       &trans           &kp ENTER  &kp BACKSPACE  &kp RCTRL  &kp RIGHT_SHIFT  &kp RIGHT_SHIFT
+&kp COMMA  &kp PERIOD       &kp PAGE_UP     &kp UP_ARROW     &kp PAGE_DOWN   &kp N0     &kp N7         &kp N8     &kp NUMBER_9     &kp RIGHT_SHIFT
+&kp MINUS  &kp KP_PLUS      &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp DOWN_ARROW  &kp N0     &kp N4         &kp N5     &kp N6           &kp RIGHT_SHIFT
+&kp SLASH  &kp KP_MULTIPLY  &kp HOME        &kp END          &kp SEMICOLON   &kp N0     &kp N1         &kp N2     &kp N3           &kp RIGHT_SHIFT
+&trans     &trans           &trans          &kp LSHFT        &trans          &kp ENTER  &kp BACKSPACE  &kp RCTRL  &kp RIGHT_SHIFT  &kp RIGHT_SHIFT
             >;
         };
 
         layer2 {
             label = "FUNCTION";
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp F1   &kp F2   &kp F3     &kp F4  &kp F5
-&trans        &trans        &trans        &trans        &bt BT_CLR      &kp F6   &kp F7   &kp F8     &kp F9  &kp F10
-&trans        &trans        &trans        &trans        &bt BT_CLR_ALL  &kp F11  &trans   &trans     &trans  &trans
-&trans        &trans        &trans        &trans        &trans          &trans   &kp F12  &kp RCTRL  &trans  &trans
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4    &kp RIGHT_SHIFT  &kp F1   &kp F2           &kp F3           &kp RIGHT_SHIFT
+&trans        &trans        &trans        &trans          &bt BT_CLR      &kp F4           &kp F5   &kp F6           &kp F7           &kp RIGHT_SHIFT
+&trans        &trans        &trans        &trans          &bt BT_CLR_ALL  &kp F8           &kp F9   &kp F10          &kp F11          &kp RIGHT_SHIFT
+&trans        &trans        &kp INSERT    &kp SCROLLLOCK  &kp ESCAPE      &kp RIGHT_SHIFT  &kp F12  &kp RIGHT_SHIFT  &kp RIGHT_SHIFT  &kp RIGHT_SHIFT
             >;
         };
 
