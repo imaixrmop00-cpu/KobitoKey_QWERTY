@@ -27,7 +27,7 @@
 &kp F           &kp Y       &kp R        &kp W      &kp J        &mt RIGHT_ALT X  &kp U            &kp C      &mt RIGHT_SHIFT L  &kp P
 &kp H           &kp S       &kp N        &kp T      &kp K        &kp O            &kp A            &kp I      &kp E              &kp TAB
 &kp B           &kp Z       &kp M        &kp D      &kp G        &kp V            &kp MINUS        &kp SLASH  &mt RIGHT_SHIFT Q  &kp LEFT_WIN
-&kp LEFT_SHIFT  &kp DELETE  &lt 4 SPACE  &lt 1 TAB  &lt 2 ENTER  &lt 2 ENTER      &lt 1 BACKSPACE  &kp RCTRL  &kp LA(F4)         &kp LA(LC(DELETE))
+&kp LEFT_SHIFT  &kp DELETE  &lt 4 SPACE  &lt 1 TAB  &lt 2 ENTER  &lt 2 ENTER      &lt 1 BACKSPACE  &kp RCTRL  &kp LA(F4)         &kp RC(RA(DELETE))
             >;
         };
 
