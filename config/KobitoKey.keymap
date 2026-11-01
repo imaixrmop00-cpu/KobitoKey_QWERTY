@@ -38,40 +38,49 @@
 
         default_layer {
             bindings = <
-&kp F           &kp Y       &kp R      &kp W    &kp J        &kp X        &kp U                    &kp C      &mt RIGHT_SHIFT L  &kp P
-&kp H           &kp S       &kp N      &kp T    &kp K        &kp O        &kp A                    &kp I      &kp E              &kp TAB
-&kp B           &kp Z       &kp M      &kp D    &kp G        &kp V        &trans                   &trans     &mt RIGHT_SHIFT Q  &kp LEFT_WIN
-&kp LEFT_SHIFT  &kp DELETE  &kp SPACE  &kp TAB  &lt 2 ENTER  &lt 1 ENTER  &mt RIGHT_ALT BACKSPACE  &kp RCTRL  &trans             &trans
+&kp F           &kp Y       &kp R        &kp W      &kp J        &mt RIGHT_ALT X  &kp U            &kp C      &mt RIGHT_SHIFT L  &kp P
+&kp H           &kp S       &kp N        &kp T      &kp K        &kp O            &kp A            &kp I      &kp E              &kp TAB
+&kp B           &kp Z       &kp M        &kp D      &kp G        &kp V            &kp MINUS        &trans     &mt RIGHT_SHIFT Q  &kp LEFT_WIN
+&kp LEFT_SHIFT  &kp DELETE  &lt 4 SPACE  &lt 1 TAB  &lt 2 ENTER  &lt 2 ENTER      &lt 1 BACKSPACE  &kp RCTRL  &trans             &trans
             >;
         };
 
         layer1 {
             label = "NUMBER";
             bindings = <
-&kp N0     &kp N1  &kp N2  &kp N3     &trans  &kp MINUS  &trans     &kp UP    &trans     &trans
-&kp EQUAL  &kp N4  &kp N5  &kp N6     &trans  &kp PLUS   &kp LEFT   &kp DOWN  &kp RIGHT  &trans
-&trans     &kp N7  &kp N8  &kp N9     &trans  &kp ASTRK  &kp SLASH  &kp LBKT  &kp RBKT   &trans
-&trans     &trans  &trans  &kp LSHFT  &trans  &trans     &trans     &trans    &trans     &trans
+&kp COMMA  &kp PERIOD  &kp PAGE_UP  &kp UP_ARROW    &kp END          &kp N0     &kp N7         &kp N8     &kp NUMBER_9     &kp RIGHT_SHIFT
+&kp MINUS  &kp PLUS    &kp HOME     &kp PAGE_DOWN   &kp DOWN_ARROW   &kp N0     &kp N4         &kp N5     &kp N6           &kp RIGHT_SHIFT
+&trans     &trans      &kp EQUAL    &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp N0     &kp N1         &kp N2     &kp N3           &kp RIGHT_SHIFT
+&trans     &trans      &trans       &kp LSHFT       &trans           &kp ENTER  &kp BACKSPACE  &kp RCTRL  &kp RIGHT_SHIFT  &kp RIGHT_SHIFT
             >;
         };
 
         layer2 {
             label = "FUNCTION";
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp F1   &kp F2   &kp F3  &kp F4  &kp F5
-&trans        &trans        &trans        &trans        &bt BT_CLR      &kp F6   &kp F7   &kp F8  &kp F9  &kp F10
-&trans        &trans        &trans        &trans        &bt BT_CLR_ALL  &kp F11  &kp F12  &trans  &trans  &trans
-&trans        &trans        &trans        &trans        &trans          &kp DEL  &trans   &trans  &trans  &trans
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp F1   &kp F2   &kp F3     &kp F4  &kp F5
+&trans        &trans        &trans        &trans        &bt BT_CLR      &kp F6   &kp F7   &kp F8     &kp F9  &kp F10
+&trans        &trans        &trans        &trans        &bt BT_CLR_ALL  &kp F11  &trans   &trans     &trans  &trans
+&trans        &trans        &trans        &trans        &trans          &trans   &kp F12  &kp RCTRL  &trans  &trans
             >;
         };
 
         layer3 {
             label = "MOUSE";
             bindings = <
-&trans     &trans  &trans    &trans    &trans  &mkp MB1   &mkp LCLK  &mkp RCLK  &kp RIGHT_SHIFT  &trans
-&trans     &trans  &trans    &trans    &trans  &mkp MB1   &mkp LCLK  &trans     &trans           &kp TAB
-&trans     &trans  &trans    &trans    &trans  &mkp MB1   &mkp MB1   &trans     &trans           &trans
+&trans     &trans  &trans    &trans    &trans  &trans     &mkp LCLK  &mkp RCLK  &kp RIGHT_SHIFT  &trans
+&trans     &trans  &trans    &trans    &trans  &trans     &trans     &trans     &trans           &kp TAB
+&trans     &trans  &trans    &trans    &trans  &trans     &trans     &trans     &trans           &trans
 &kp LSHFT  &trans  &kp LCMD  &kp LALT  &to 0   &kp ENTER  &trans     &trans     &to 0            &kp RALT
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
