@@ -19,15 +19,6 @@
         };
     };
 
-    macros {
-        ctrl_alt_del: ctrl_alt_del {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RCTRL &kp RIGHT_ALT &kp DELETE>;
-            label = "CTRL_ALT_DEL";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -36,7 +27,7 @@
 &kp F           &kp Y       &kp R        &kp W      &kp J        &mt RIGHT_ALT X  &kp U            &kp C      &mt RIGHT_SHIFT L  &kp P
 &kp H           &kp S       &kp N        &kp T      &kp K        &kp O            &kp A            &kp I      &kp E              &kp TAB
 &kp B           &kp Z       &kp M        &kp D      &kp G        &kp V            &kp MINUS        &kp SLASH  &mt RIGHT_SHIFT Q  &kp LEFT_WIN
-&kp LEFT_SHIFT  &kp DELETE  &lt 4 SPACE  &lt 1 TAB  &lt 2 ENTER  &lt 2 ENTER      &lt 1 BACKSPACE  &kp RCTRL  &trans             &ctrl_alt_del
+&kp LEFT_SHIFT  &kp DELETE  &lt 4 SPACE  &lt 1 TAB  &lt 2 ENTER  &lt 2 ENTER      &lt 1 BACKSPACE  &kp RCTRL  &kp LA(F4)         &kp LA(LC(DELETE))
             >;
         };
 
