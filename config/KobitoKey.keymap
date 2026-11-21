@@ -56,7 +56,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &kp RIGHT_ALT  &mkp LCLK  &mkp RCLK  &kp RIGHT_SHIFT  &trans
 &trans  &trans  &trans  &trans  &trans  &trans         &trans     &trans     &trans           &trans
-&trans  &trans  &trans  &trans  &trans  &trans         &trans     &trans     &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans         &trans     &trans     &kp RCTRL        &trans
 &trans  &trans  &trans  &trans  &trans  &kp ENTER      &trans     &trans     &trans           &trans
             >;
         };
