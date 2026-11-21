@@ -24,10 +24,10 @@
 
         default_layer {
             bindings = <
-&kp F           &kp Y       &kp R        &kp W      &kp J        &mt RIGHT_ALT X  &kp U            &kp C      &mt RIGHT_SHIFT L  &kp P
-&kp H           &kp S       &kp N        &kp T      &kp K        &kp O            &kp A            &kp I      &kp E              &kp TAB
-&kp B           &kp Z       &kp M        &kp D      &kp G        &kp V            &kp MINUS        &kp SLASH  &mt RIGHT_SHIFT Q  &kp RIGHT_SHIFT
-&kp LEFT_SHIFT  &kp DELETE  &lt 4 SPACE  &lt 1 TAB  &lt 2 ENTER  &lt 2 ENTER      &lt 1 BACKSPACE  &kp RCTRL  &kp LA(F4)         &kp LEFT_WIN
+&kp F           &kp Y             &kp R        &kp W      &kp J        &mt RIGHT_ALT X  &kp U            &kp C      &mt RIGHT_SHIFT L  &kp P
+&kp H           &kp S             &kp N        &kp T      &kp K        &kp O            &kp A            &kp I      &kp E              &kp TAB
+&kp B           &kp Z             &kp M        &kp D      &kp G        &kp V            &kp MINUS        &kp SLASH  &mt RCTRL Q        &kp RIGHT_SHIFT
+&kp LEFT_SHIFT  &mt LCTRL DELETE  &lt 4 SPACE  &lt 1 TAB  &lt 2 ENTER  &lt 2 ENTER      &lt 1 BACKSPACE  &kp RCTRL  &kp LA(F4)         &kp LEFT_WIN
             >;
         };
 
@@ -35,7 +35,7 @@
             label = "NUMBER";
             bindings = <
 &kp COMMA  &kp PERIOD       &kp PAGE_UP  &kp UP_ARROW    &kp SEMICOLON    &kp RIGHT_ALT  &kp N8         &kp N9     &kp RIGHT_SHIFT  &kp RIGHT_SHIFT
-&kp MINUS  &kp KP_PLUS      &kp HOME     &kp PAGE_DOWN   &kp DOWN_ARROW   &kp N4         &kp N5         &kp N6     &kp N7           &kp RIGHT_SHIFT
+&kp MINUS  &kp KP_PLUS      &kp HOME     &kp PAGE_DOWN   &kp DOWN_ARROW   &kp N0         &kp N4         &kp N5     &kp N6           &kp N7
 &kp SLASH  &kp KP_MULTIPLY  &kp END      &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp N0         &kp N1         &kp N2     &kp N3           &kp RIGHT_SHIFT
 &trans     &trans           &trans       &kp EQUAL       &kp ENTER        &kp ENTER      &kp BACKSPACE  &kp RCTRL  &kp RIGHT_SHIFT  &kp RIGHT_SHIFT
             >;
@@ -54,10 +54,10 @@
         layer3 {
             label = "MOUSE";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &kp RIGHT_SHIFT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans           &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans           &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &kp RIGHT_ALT  &mkp LCLK  &mkp RCLK  &kp RIGHT_SHIFT  &trans
+&trans  &trans  &trans  &trans  &trans  &trans         &trans     &trans     &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans         &trans     &trans     &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &kp ENTER      &trans     &trans     &trans           &trans
             >;
         };
 
