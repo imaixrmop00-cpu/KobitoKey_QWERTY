@@ -95,8 +95,7 @@
     excluded-positions = <
         5
         6
-        8
-        16
+        7
         28
         35
     >;
